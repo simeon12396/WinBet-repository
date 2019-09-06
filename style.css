@@ -1,0 +1,215 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    font-size: 10px;
+}
+
+#wrapper {
+    width: 1920px;
+}
+
+header {
+    padding: 15px 0;
+    z-index: 10;
+    position: relative;
+    background: transparent;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+}
+
+.nav-menu li {
+    font-family: OpenSans;
+    font-size: 17px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.26;
+    letter-spacing: normal;
+    text-align: center;
+    list-style-type: none;
+    padding-right: 1rem;
+}
+
+.nav-menu a {
+    color: #ffffff;
+    height: inherit;
+    text-decoration: none;
+}
+
+.nav-menu ul {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu li:last-of-type {
+    border-radius: 30.5px;
+    background-image: linear-gradient(to bottom, #ff0000, #ad0000);
+    padding: 8px 25px;
+}
+
+.happy-hour {
+    background: url('./images/back.jpg');
+    height: 80vh;
+    position: relative;
+    top: -100px;
+    left: 0;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -100px;
+}
+
+.happy-hour img {
+    width: 800px;
+}
+
+.happy-hour button {
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    padding: 10px 85px;
+    border-radius: 50px;
+    background-image: linear-gradient(to bottom, #ff0000, #ad0000);
+    font-weight: 900;
+}
+
+.register {
+    background-color: white;
+    position: relative;
+}
+
+.register .container {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.container .title-text {
+    font-size: 34.5px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.19;
+    letter-spacing: normal;
+    color: #212121;
+    margin-top: 50px;
+}
+
+.container .line {
+    width: 58px;
+    height: 2.5px;
+    background-color: #d10000;
+    margin: 20px auto;
+}
+
+.container .content-text {
+    color: #86878b;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    font-size: .8rem;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 3rem;
+}
+
+.register .circle {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, #ff0000, #ad0000);
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    line-height: 60px;
+    color: white;
+    font-size: 2rem;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.register h4 {
+    font-size: 25px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+}
+
+.content-circle p:first-of-type,
+.content-circle p:last-of-type {
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #d10000;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.register button {
+    border: none;
+    background-image: linear-gradient(to bottom, #ff0000, #ad0000);
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.04;
+    letter-spacing: normal;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: -125px;
+    left: 44%;
+}
+
+.information {
+    background-color: black;
+}
+
+.information .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fruits {
+    width: 600px;
+    margin: 100px;
+}
+
+.most-played {
+    font-size: 35px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.86;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
