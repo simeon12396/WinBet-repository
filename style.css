@@ -9,10 +9,6 @@ body {
     font-size: 10px;
 }
 
-#wrapper {
-    width: 1920px;
-}
-
 header {
     padding: 15px 0;
     z-index: 10;
@@ -27,11 +23,16 @@ header {
     align-items: center;
 }
 
-.logo {
+.main-menu .logo {
     width: 200px;
 }
+.navigation ul {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+}
 
-.nav-menu li {
+.navigation li {
     font-family: OpenSans;
     font-size: 17px;
     font-weight: bold;
@@ -44,22 +45,16 @@ header {
     padding-right: 1rem;
 }
 
-.nav-menu a {
-    color: #ffffff;
-    height: inherit;
-    text-decoration: none;
-}
-
-.nav-menu ul {
-    margin-bottom: 0;
-    display: flex;
-    align-items: center;
-}
-
-.nav-menu li:last-of-type {
+.navigation li:last-of-type {
     border-radius: 30.5px;
     background-image: linear-gradient(to bottom, #ff0000, #ad0000);
     padding: 8px 25px;
+}
+
+.navigation a {
+    color: #ffffff;
+    height: inherit;
+    text-decoration: none;
 }
 
 .happy-hour {
@@ -76,7 +71,7 @@ header {
     margin-bottom: -100px;
 }
 
-.happy-hour img {
+.center img {
     width: 800px;
 }
 
@@ -101,7 +96,7 @@ header {
     margin-bottom: 100px;
 }
 
-.container .title-text {
+.register .title-text {
     font-size: 34.5px;
     font-weight: bold;
     font-style: normal;
@@ -112,14 +107,14 @@ header {
     margin-top: 50px;
 }
 
-.container .line {
+.register .line {
     width: 58px;
     height: 2.5px;
     background-color: #d10000;
     margin: 20px auto;
 }
 
-.container .content-text {
+.register .content-text {
     color: #86878b;
     font-weight: normal;
     font-style: normal;
@@ -131,7 +126,7 @@ header {
     margin-bottom: 3rem;
 }
 
-.register .circle {
+.content-circle .circle {
     display: flex;
     justify-content: center;
     background-image: linear-gradient(to bottom, #ff0000, #ad0000);
@@ -145,7 +140,7 @@ header {
     font-weight: bold;
 }
 
-.register h4 {
+.content-circle h4 {
     font-size: 25px;
     font-weight: bold;
     font-style: normal;
@@ -194,16 +189,18 @@ header {
 
 .information .center {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1.5rem;
 }
 
-.fruits {
+.information .fruits {
     width: 600px;
     margin: 100px;
 }
 
-.most-played {
+.information .most-played {
     font-size: 35px;
     font-weight: 500;
     font-style: normal;
@@ -213,3 +210,119 @@ header {
     text-align: center;
     color: #ffffff;
 }
+
+.box img {
+    width: 100%;
+}
+
+.game-type {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: #313131;
+}
+
+.game-type.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.game-type span,
+.game-type i {
+    color: white;
+    
+}
+.game-type span {
+    padding-left: 5px;
+    padding-right: 0px;
+}
+
+.game-type i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 5px;
+}
+
+footer {
+    padding-top: 3rem;
+    background-color: black;
+}
+
+footer button {
+    border: none;
+    background-color: #818181;
+    margin-right: .4rem;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    line-height: 10px;
+    transition: all .2s ease-in-out;
+}
+
+
+footer .fa {
+    font-size: 1.1rem;
+}
+
+footer button:first-of-type {
+    background-color: #881429;
+}
+
+footer button:hover {
+    background-color: #d9d9d9;
+}
+
+.social-icons {
+    margin-bottom: 1.5rem;
+}
+
+.payments h6,
+.official-partners h6 {
+    text-align: center;
+    color: #e7b920;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.payments-container {
+    margin-bottom: 1.5rem;
+}
+
+.partners-container img {
+    margin-right: .6rem;
+}
+
+.official-partners {
+    margin-bottom: 1.5rem;
+}
+
+.gambling-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.gambling-container img:first-of-type {
+    margin-right: .6rem;
+}
+
+.other-news .text {
+    font-size: 9px;
+    color: #959595;
+    font-family: "Open Sans";
+    font-weight: 400;
+    text-align: center;
+    width: 970px;
+}
+
+.other-news .text:last-of-type {
+    width: 100%;
+}
+
+.winbet-logo-small {
+    margin-bottom: 1.5rem;
+}
+
+
