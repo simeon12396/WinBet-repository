@@ -4,9 +4,34 @@
     header {
         padding: 25px 0;
     }
+
     .hamburger-menu {
         position: relative;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
+
+    .hamburger-menu .line {
+        height: 3px;
+        width: 30px;
+        background-color: white;
+    }
+
+    .line-1 {
+        transform: rotateZ(-45deg) translateX(-8px) translateX(6px);
+    }
+
+    .line-2 {
+        opacity: 0;
+    }
+
+    .line-3 {
+        transform: rotateZ(45deg) translateY(-8px) translateX(-6px);
+    }
+
+
     .happy-hour {
         background-image: url('./images/tablet-mode/bck.jpg');
         background-size: cover;
@@ -19,31 +44,7 @@
         position: absolute;
         top: 70%;
     }
-    .line {
-        margin-right: .5rem;
-        height: 9px;
-        width: 40px;
-        background-color: white;
-        border-radius: 10px;
-    }
-    .line::before {
-        content: '';
-        height: 9px;
-        width: 40px;
-        background-color: white;
-        border-radius: 10px;
-        position: absolute;
-        top: -13px;
-    }
-    .line::after {
-        content: '';
-        height: 9px;
-        width: 40px;
-        background-color: white;
-        border-radius: 10px;
-        position: absolute;
-        top: 13px;
-    }
+
     .navigation {
         display: none;
     }
@@ -157,30 +158,7 @@
     .main-menu .logo {
         width: 150px;
     }
-    .line {
-        margin-right: .5rem;
-        height: 4px;
-        width: 30px;
-        background-color: white;
-        border-radius: 10px;
-    }
-    .line::before {
-        height: 4px;
-        width: 30px;
-        background-color: white;
-        border-radius: 10px;
-        position: absolute;
-        top: -10px;
-    }
-    .line::after {
-        content: '';
-        height: 4px;
-        width: 30px;
-        background-color: white;
-        border-radius: 10px;
-        position: absolute;
-        top: 10px;
-    }
+
     .happy-hour {
         height: 300px;
         top: 0;

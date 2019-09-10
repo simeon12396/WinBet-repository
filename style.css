@@ -33,6 +33,35 @@ header {
     align-items: center;
 }
 
+.nav-bar {
+    position: absolute;
+    right: -200px;
+    top: 0;
+    background-color: white;
+    padding: 5px 20px;
+    border-radius: 20px 0 20px 0;
+}
+
+.nav-bar ul {
+    margin-bottom: 0;
+}
+
+.nav-bar li {
+    list-style-type: none;
+    margin: 7px 0;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: lightslategrey;
+    font-size: 12px;
+}
+
+.change {
+    right: 0px;
+    top: 40px;
+}
+
 .navigation li {
     font-family: OpenSans;
     font-size: 17px;

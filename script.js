@@ -1,3 +1,5 @@
+/** slick slider start */
+
 $('.slider-container').slick({
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -18,3 +20,12 @@ $('.slider-container').slick({
         }
     ]
 });
+
+/** slick slider end */
+
+const hamburgerMenu = document.querySelector('.hamburger-menu'),
+      navBar = document.querySelector('.nav-bar');
+
+hamburgerMenu.addEventListener('click', () => {
+    navBar.classList.toggle('change');
+})
