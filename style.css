@@ -35,11 +35,13 @@ header {
 
 .nav-bar {
     position: absolute;
-    right: -200px;
-    top: 0;
+    right: 0;
+    top: 40px;
     background-color: white;
     padding: 5px 20px;
-    border-radius: 20px 0 20px 0;
+    opacity: 0;
+    transition: all .2s linear;
+    border-radius: 20px 0 0 20px;
 }
 
 .nav-bar ul {
@@ -49,17 +51,21 @@ header {
 .nav-bar li {
     list-style-type: none;
     margin: 7px 0;
+    font-weight: 900;
+}
+
+.nav-bar li:hover a {
+    padding-bottom: 2px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    cursor: pointer;
 }
 
 .nav-bar a {
     text-decoration: none;
     color: lightslategrey;
     font-size: 12px;
-}
-
-.change {
-    right: 0px;
-    top: 40px;
+    transition: all .2s linear;
 }
 
 .navigation li {

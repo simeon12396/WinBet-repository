@@ -23,9 +23,13 @@ $('.slider-container').slick({
 
 /** slick slider end */
 
+/** vanilla js start */
+
 const hamburgerMenu = document.querySelector('.hamburger-menu'),
-      navBar = document.querySelector('.nav-bar');
+    dropdownNavBar = document.querySelector('.nav-bar');
 
 hamburgerMenu.addEventListener('click', () => {
-    navBar.classList.toggle('change');
-})
+
+    dropdownNavBar.classList.toggle('changeNavBar');
+    hamburgerMenu.classList.toggle('hamburgerMenu');
+});
