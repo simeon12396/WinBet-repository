@@ -27,7 +27,7 @@
         width: 0;
         transition: opacity .2s linear;
     }
-    .hamburgerMenu .overflow {
+    .changeHamburgerMenu .overflow {
         width: 100vw;
         height: 100vh;
         position: fixed;
@@ -54,8 +54,8 @@
     .fa-times {
         opacity: 0;
     }
-    .hamburgerMenu .fa-bars {
-        opacity: 0;
+    .changeHamburgerMenu .fa-bars,
+    .changeHamburgerMenu .fa-times {
         color: white;
         font-size: 30px;
         position: absolute;
@@ -63,21 +63,18 @@
         left: 0;
         z-index: 20;
     }
-    .hamburgerMenu .fa-times {
-        position: absolute;
+    .changeHamburgerMenu .fa-bars {
+        opacity: 0;
+    }
+    .changeHamburgerMenu .fa-times {
         opacity: 1;
-        color: white;
-        font-size: 30px;
-        top: 0;
-        left: 0;
-        z-index: 20;
     }
     .changeNavBar {
         opacity: 1;
         z-index: 20;
         border-radius: 20px 0 0 20px;
         top: 60px;
-        height: 40vh;
+        height: 270px;
         padding: 10px 30px;
     }
     .changeNavBar ul {
@@ -130,6 +127,74 @@
         display: block;
     }
 }
+
+@media only screen and (min-width: 320px) and (max-width: 1199px) {
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .cookies-wrapper {
+        margin-bottom: 0;
+    }
+    .cookies {
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+    }
+    .left-side,
+    .right-side {
+        align-items: center !important;
+    }
+    .left-side span,
+    .left-side a {
+        display: flex;
+        align-items: center;
+        font-size: 1.8vw;
+    }
+    .right-side {
+        justify-content: center !important;
+    }
+    .right-side button {
+        font-size: 1.6vw;
+    }
+    .right-side i {
+        font-size: 25px;
+        margin-right: 0;
+    }
+}
+
+
+/* @media only screen and (min-width: 576px) and (max-width: 959px) {
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .cookies-wrapper {
+        margin-bottom: 0;
+        height: 60px;
+    }
+    .cookies {
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+        height: inherit;
+    }
+    .right-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around !important;
+        align-items: center !important;
+    }
+    .left-side span {
+        font-size: 16px;
+    }
+    .right-side button {
+        font-size: 12px;
+    }
+    .right-side i {
+        margin-right: 0;
+    }
+} */
 
 @media only screen and (max-width: 768px) {
     .main-menu .logo {

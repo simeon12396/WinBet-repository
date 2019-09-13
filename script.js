@@ -1,4 +1,4 @@
-/** slick slider start */
+/** slick slider jquery plugin start */
 
 $('.slider-container').slick({
     slidesToShow: 5,
@@ -33,18 +33,18 @@ function hamburgerMenu() {
 
     function toggleHamburgerMenu(e) {
         dropdownNavBar.classList.toggle('changeNavBar');
-        hamburgerMenu.classList.toggle('hamburgerMenu');
+        hamburgerMenu.classList.toggle('changeHamburgerMenu');
     };
 };
 
-function cookies() {
+function cookies(currentCookie) {
     (function() {
         const cookiesContainer = document.querySelector('.cookies');
 
         let getCookies = document.cookie.split('=');
 
         getCookies.forEach((item, index) => {
-            if (item === 'isAccepted') {
+            if (item === currentCookie) {
                 cookiesContainer.classList.add('hideCookiesContainer');
             };
         });
@@ -61,9 +61,10 @@ function cookies() {
         let getCookies = document.cookie.split('=');
 
         getCookies.forEach((item, index) => {
-            if (item !== 'isAccepted') {
+            if (item !== currentCookie) {
                 console.log('yes');
-                document.cookie = 'isAccepted=yes' + '; expires=' + new Date(9999, 12, 31).toUTCString();
+                // document.cookie = currentCookie + '=yes' + '; expires=' + new Date(9999, 12, 31).toUTCString();
+                document.cookie = `${currentCookie} =yes; expires= ${new Date(9999,12, 31).toUTCString()}`;
                 cookiesContainer.classList.add('hideCookiesContainer');
             };
         });
@@ -76,4 +77,4 @@ function cookies() {
 };
 
 hamburgerMenu();
-cookies();
+cookies(20);
