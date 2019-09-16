@@ -45,6 +45,50 @@
         </div>
     </section>
 
+    <section class="register-overlay">
+
+        <div class="register-container"></div>
+
+        <div class="form-container">
+            <header>
+                <h1 class="white">Register Form</h1>
+                <i class="close-overlay fa fa-times" aria-hidden="true"></i>
+            </header>
+
+            <main>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                        <input type="text" id="name" placeholder="Enter your name">
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <input type="text" id="email" placeholder="Enter your email adress">
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                        <input type="text" id="password" placeholder="Enter your password">
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                        <input type="text" id="password" placeholder="Confirm your password">
+                    </div>
+
+                    <div class="age row">
+                        <select name="days" id="days"></select>
+                    </div>
+                </div>
+            </main>
+
+            <footer class="register-footer">
+                <button>Submit</button>
+            </footer>
+        </div>
+    </section>
+
     <header>
         <div class="container-fluid ">
             <div class="main-menu">
@@ -70,6 +114,7 @@
                         <li><a href="#">Регистрация</a></li>
                     </ul>
                 </nav>
+
                 <nav class="navigation">
                     <ul>
                         <li><a href="#">Спорт</a></li>
@@ -79,7 +124,7 @@
                         <li><a href="#">Виртуални+</a></li>
                         <li><a href="#">Виртуални</a></li>
                         <li><a href="#">Промоции</a></li>
-                        <li><a href="#">Регистрация</a></li>
+                        <li class="register-btn"><a href="#">Регистрация</a></li>
                     </ul>
                 </nav>
             </div>
@@ -194,7 +239,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="general-footer">
         <div class="container">
             <div class="row justify-content-center social-icons">
                 <button>

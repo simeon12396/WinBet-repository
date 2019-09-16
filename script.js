@@ -37,6 +37,8 @@ function hamburgerMenu() {
     };
 };
 
+hamburgerMenu();
+
 function cookies(currentCookie) {
     (function() {
         const cookiesContainer = document.querySelector('.cookies');
@@ -76,5 +78,32 @@ function cookies(currentCookie) {
     };
 };
 
-hamburgerMenu();
-cookies(20);
+cookies('isAccepted');
+
+function registerForm() {
+    const registerBtn = document.querySelector('.register-btn');
+
+    registerBtn.addEventListener('click', openModalForRegister);
+
+    function openModalForRegister() {
+        const registerOverlay = document.querySelector('.register-overlay');
+
+        registerOverlay.classList.add('showOverlay');
+
+        let dataAges = {
+            'days': [],
+            'months': ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November'],
+            'allYears': function() {
+                let allYears
+            }
+
+        }
+        const closeOverlay = document.querySelector('.close-overlay');
+
+        closeOverlay.addEventListener('click', () => {
+            registerOverlay.classList.remove('showOverlay');
+        });
+    };
+};
+
+registerForm();

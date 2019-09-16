@@ -1,12 +1,14 @@
 * {
     padding: 0;
     margin: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
 
 body {
     font-size: 10px;
+    position: relative;
 }
 
 .cookies-wrapper {
@@ -56,6 +58,7 @@ body {
 }
 
 .cookies button {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ff0000), to(#ad0000));
     background-image: linear-gradient(to bottom, #ff0000, #ad0000);
     border: none;
     font-size: 15px;
@@ -73,9 +76,16 @@ header {
 }
 
 .main-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -85,7 +95,11 @@ header {
 
 .navigation ul {
     margin-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -96,6 +110,7 @@ header {
     background-color: white;
     padding: 5px 20px;
     opacity: 0;
+    -webkit-transition: all .2s linear;
     transition: all .2s linear;
     border-radius: 20px 0 0 20px;
 }
@@ -121,6 +136,7 @@ header {
     text-decoration: none;
     color: lightslategrey;
     font-size: 12px;
+    -webkit-transition: all .2s linear;
     transition: all .2s linear;
 }
 
@@ -139,8 +155,123 @@ header {
 
 .navigation li:last-of-type {
     border-radius: 30.5px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ff0000), to(#ad0000));
     background-image: linear-gradient(to bottom, #ff0000, #ad0000);
     padding: 8px 25px;
+}
+
+.navigation li:last-of-type:hover {
+    cursor: pointer;
+}
+
+.form-container {
+    display: none;
+}
+
+.showOverlay {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.showOverlay .register-container {
+    background-color: gray;
+    opacity: .5;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 20;
+}
+
+.showOverlay .form-container {
+    display: block;
+    border-radius: 70px;
+    top: 20vh;
+    position: relative;
+    right: 0;
+    opacity: 1;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    max-height: 500px;
+    background-color: white;
+}
+
+.showOverlay .fa-times {
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    right: -10px;
+    font-weight: normal;
+}
+
+.showOverlay header {
+    width: 60%;
+    margin: 20px auto 0;
+    color: silver;
+    font-weight: 400;
+}
+
+.showOverlay h1 {
+    margin-right: 25px;
+}
+
+.showOverlay main {
+    height: 250px;
+}
+
+.showOverlay .container {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.showOverlay .row {
+    width: 80%;
+}
+
+.showOverlay input {
+    transition: all .2s linear;
+    width: 70%;
+    border: none;
+    border-bottom: 1px solid silver;
+}
+
+.showOverlay input:focus {
+    padding-left: 10px;
+    border: 1px solid yellow;
+}
+
+.showOverlay i {
+    margin-right: 10px;
+    font-size: 20px;
+    text-align: right;
+    line-height: 40px;
+}
+
+.showOverlay footer {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.showOverlay button {
+    background-image: linear-gradient(to bottom, #ff0000, #ad0000);
+    border: none;
+    padding: 10px 45px;
+    border-radius: 20px;
+    color: silver;
 }
 
 .navigation a {
@@ -156,9 +287,18 @@ header {
     top: -100px;
     left: 0;
     padding-top: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-bottom: -100px;
 }
@@ -173,6 +313,7 @@ header {
     color: white;
     padding: 10px 85px;
     border-radius: 50px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ff0000), to(#ad0000));
     background-image: linear-gradient(to bottom, #ff0000, #ad0000);
     font-weight: 900;
 }
@@ -220,13 +361,22 @@ header {
 
 .register-container {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
 .content-circle .circle {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ff0000), to(#ad0000));
     background-image: linear-gradient(to bottom, #ff0000, #ad0000);
     width: 60px;
     height: 60px;
@@ -264,6 +414,7 @@ header {
 
 .register button {
     border: none;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ff0000), to(#ad0000));
     background-image: linear-gradient(to bottom, #ff0000, #ad0000);
     font-weight: 900;
     font-style: normal;
@@ -285,9 +436,18 @@ header {
 }
 
 .information .center {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-bottom: 1.5rem;
 }
@@ -338,19 +498,25 @@ header {
 }
 
 .game-type i {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding-left: 0;
     padding-right: 5px;
 }
 
-footer {
+.general-footer {
     padding-top: 3rem;
     background-color: black;
 }
 
-footer button {
+.general-footer button {
     border: none;
     background-color: #818181;
     margin-right: .4rem;
@@ -358,18 +524,19 @@ footer button {
     width: 30px;
     border-radius: 50%;
     line-height: 10px;
+    -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 
-footer .fa {
+.general-footer .fa {
     font-size: 1.1rem;
 }
 
-footer button:first-of-type {
+.general-footer button:first-of-type {
     background-color: #881429;
 }
 
-footer button:hover {
+.general-footer button:hover {
     background-color: #d9d9d9;
 }
 
@@ -395,15 +562,24 @@ footer button:hover {
 }
 
 .partners-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 900px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin: 0 auto;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
 .partners-container img {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 5%;
     flex: 0 0 5%;
     margin: 0 .7rem .7rem .7rem;
     height: 75px;
@@ -414,8 +590,14 @@ footer button:hover {
 }
 
 .gambling-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-bottom: 1rem;
 }
@@ -424,17 +606,22 @@ footer button:hover {
     margin-right: .6rem;
 }
 
-footer nav {
+.general-footer nav {
     display: none;
 }
 
-footer ul {
+.general-footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
-footer li {
+.general-footer li {
     height: 12px;
     list-style-type: none;
     padding: 0 6px;
@@ -443,7 +630,84 @@ footer li {
     font-size: 10px;
 }
 
-footer a {
+.general-footer a {
+    color: #959595;
+}
+
+.text-container {
+    font-size: 10px;
+    color: #959595;
+    font-family: "Open Sans";
+    font-weight: 400;
+    text-align: center;
+    max-width: 100%;
+    padding: 0 15px;
+}
+
+.winbet-logo-small {
+    margin-bottom: 1.5rem;
+}
+
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+justify-content: center;
+margin: 0 auto;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+.partners-container img {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 5%;
+    flex: 0 0 5%;
+    margin: 0 .7rem .7rem .7rem;
+    height: 75px;
+}
+
+.official-partners {
+    margin-bottom: 1.5rem;
+}
+
+.gambling-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.gambling-container img:first-of-type {
+    margin-right: .6rem;
+}
+
+.general-footer nav {
+    display: none;
+}
+
+.general-footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.general-footer li {
+    height: 12px;
+    list-style-type: none;
+    padding: 0 6px;
+    border-right: 1px solid #959595;
+    line-height: 10px;
+    font-size: 10px;
+}
+
+.general-footer a {
     color: #959595;
 }
 

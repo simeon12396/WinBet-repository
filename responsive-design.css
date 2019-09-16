@@ -123,7 +123,7 @@
         background-image: url('./images/tablet-mode/right-arrow.png') !important;
         right: 0 !important;
     }
-    footer nav {
+    .general-footer nav {
         display: block;
     }
 }
@@ -227,7 +227,7 @@
     .payments-container {
         width: 80%;
     }
-    footer li {
+    .general-footer li {
         margin-bottom: .5rem;
     }
     .slider-container {
