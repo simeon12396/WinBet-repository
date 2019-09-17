@@ -246,6 +246,8 @@ header {
 }
 
 .showOverlay input {
+    padding-left: 10px;
+    border-radius: 20px;
     transition: all .2s linear;
     width: 70%;
     border: none;
@@ -253,8 +255,8 @@ header {
 }
 
 .showOverlay input:focus {
-    padding-left: 10px;
-    border: 1px solid yellow;
+    padding-left: 15px;
+    outline: none;
 }
 
 .showOverlay i {
