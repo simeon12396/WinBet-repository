@@ -56,36 +56,45 @@
             </header>
 
             <main>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-                        <input type="text" id="name" placeholder="Enter your name">
+                <form action="#" class="register-form">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                            <input type="text" id="name" placeholder="Enter your name">
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <input type="text" id="email" placeholder="Enter your email adress">
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                            <input type="password" id="password" placeholder="Enter your password">
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                            <input type="password" id="password" placeholder="Confirm your password">
+                        </div>
+
+                        <div class="multiple-selects row justify-content-around mb-5 mt-5">
+                            <select name="days" id="days" class="days col-3">
+                            </select>
+
+                            <select name="months" id="months" class="months col-3">
+                            </select>
+
+                            <select name="all-years" id="all-years" class="all-years col-3">
+                            </select>
+                        </div>
                     </div>
 
-                    <div class="row justify-content-center">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <input type="text" id="email" placeholder="Enter your email adress">
+                    <div class="button-container">
+                        <button class="submit-btn" type="submit">Submit</button>
                     </div>
-
-                    <div class="row justify-content-center">
-                        <i class="fa fa-unlock-alt" aria-hidden="true"></i>
-                        <input type="text" id="password" placeholder="Enter your password">
-                    </div>
-
-                    <div class="row justify-content-center">
-                        <i class="fa fa-unlock-alt" aria-hidden="true"></i>
-                        <input type="text" id="password" placeholder="Confirm your password">
-                    </div>
-
-                    <div class="age row">
-                        <select name="days" id="days"></select>
-                    </div>
-                </div>
+                </form>
             </main>
-
-            <footer class="register-footer">
-                <button>Submit</button>
-            </footer>
         </div>
     </section>
 

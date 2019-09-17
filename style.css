@@ -168,6 +168,10 @@ header {
     display: none;
 }
 
+.register-form {
+    margin-top: 1rem;
+}
+
 .showOverlay {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -216,7 +220,7 @@ header {
 
 .showOverlay header {
     width: 60%;
-    margin: 20px auto 0;
+    margin: 30px auto 0;
     color: silver;
     font-weight: 400;
 }
@@ -260,10 +264,8 @@ header {
     line-height: 40px;
 }
 
-.showOverlay footer {
+.showOverlay .button-container {
     display: flex;
-    justify-content: center;
-    font-size: 15px;
 }
 
 .showOverlay button {
@@ -272,6 +274,22 @@ header {
     padding: 10px 45px;
     border-radius: 20px;
     color: silver;
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+.showOverlay .close-overlay:hover {
+    cursor: pointer;
+}
+
+.multiple-selects {
+    width: 90% !important;
+}
+
+.multiple-selects select {
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 20px;
 }
 
 .navigation a {
