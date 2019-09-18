@@ -9,6 +9,11 @@
 body {
     font-size: 10px;
     position: relative;
+    outline: none;
+}
+
+button:focus {
+    outline:
 }
 
 .cookies-wrapper {
@@ -216,6 +221,7 @@ header {
     top: 20px;
     right: -10px;
     font-weight: normal;
+    line-height: 46px;
 }
 
 .showOverlay header {
@@ -223,10 +229,6 @@ header {
     margin: 30px auto 0;
     color: silver;
     font-weight: 400;
-}
-
-.showOverlay h1 {
-    margin-right: 25px;
 }
 
 .showOverlay main {
@@ -278,14 +280,21 @@ header {
     color: silver;
     margin: 0 auto;
     font-size: 15px;
+    outline: none;
+}
+
+.showOverlay h1 {
+    padding: 0;
+}
+
+.showOverlay .close-overlay {
+    padding: 0;
+    margin: 0;
+    right: 0;
 }
 
 .showOverlay .close-overlay:hover {
     cursor: pointer;
-}
-
-.multiple-selects {
-    width: 90% !important;
 }
 
 .multiple-selects select {

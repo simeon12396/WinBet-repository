@@ -82,8 +82,10 @@ cookies('isAccepted');
 
 function registerForm() {
     const registerBtn = document.querySelector('.register-btn');
+    const mobileRegisterBtn = document.querySelector('.mobile-register-btn');
 
     registerBtn.addEventListener('click', openModalForRegister);
+    mobileRegisterBtn.addEventListener('click', openModalForRegister);
 
     function openModalForRegister() {
         const registerOverlay = document.querySelector('.register-overlay');
@@ -177,7 +179,6 @@ function submitRegisterForm() {
         const inputPassword = e.target.form[2].value;
         const inputConfirmPassword = e.target.form[3].value;
 
-
         const inputSelectBoxDay = parseInt(e.target.form[4].value);
         const inputSelectBoxMonth = parseInt(e.target.form[5].value);
         const inputSelectBoxYear = parseInt(e.target.form[6].value);
@@ -189,7 +190,7 @@ function submitRegisterForm() {
             (inputName.length >= 4) &&
             (inputPassword === inputConfirmPassword)
         ) {
-            alert('Congrats')
+            alert('Congrats!')
         } else {
             alert('Correctly fill the form')
         }

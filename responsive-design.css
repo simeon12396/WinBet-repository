@@ -1,170 +1,170 @@
-@media only screen and (min-width: 1025px) {
-    .container-fluid {
-        padding-left: 2rem;
-        padding-right: 2rem;
+    @media only screen and (min-width: 1025px) {
+        .container-fluid {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        .main-menu {
+            padding-left: 20px;
+        }
+        .main-menu .logo {
+            width: 155px;
+        }
+        .main-menu .navigation {
+            margin-right: 1rem;
+        }
+        .main-menu li {
+            font-size: 13px;
+            padding-right: 1.5rem;
+        }
     }
-    .main-menu {
-        padding-left: 20px;
+    /* 1024px tablet mode */
+    
+    @media only screen and (max-width: 1024px) {
+        .overflow {
+            opacity: 0;
+            width: 0;
+            transition: opacity .2s linear;
+        }
+        .changeHamburgerMenu .overflow {
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 10;
+            background-color: gray;
+            opacity: .5;
+        }
+        header {
+            padding: 25px 0;
+        }
+        .hamburger-menu {
+            position: relative;
+            height: 30px;
+            width: 30px;
+            z-index: 20;
+        }
+        .fa.fa-bars {
+            opacity: 1;
+            color: white;
+            font-size: 30px;
+        }
+        .fa-times {
+            opacity: 0;
+        }
+        .changeHamburgerMenu .fa-bars,
+        .changeHamburgerMenu .fa-times {
+            color: white;
+            font-size: 30px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 20;
+        }
+        .changeHamburgerMenu .fa-bars {
+            opacity: 0;
+        }
+        .changeHamburgerMenu .fa-times {
+            opacity: 1;
+        }
+        .changeNavBar {
+            opacity: 1;
+            z-index: 20;
+            border-radius: 20px 0 0 20px;
+            top: 60px;
+            height: 270px;
+            padding: 10px 30px;
+        }
+        .changeNavBar ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .showOverlay .fa-times {
+            opacity: 1;
+            line-height: 60px
+        }
+        .happy-hour {
+            background-image: url('./images/tablet-mode/bck.jpg');
+            background-size: cover;
+            height: 82vw;
+        }
+        .happy-hour img {
+            display: none;
+        }
+        .happy-hour button {
+            position: absolute;
+            top: 70%;
+        }
+        .navigation {
+            display: none;
+        }
+        .slider-container {
+            padding: 0 45px;
+        }
+        .slider-container .box {
+            width: 100px;
+        }
+        .slick-prev:before,
+        .slick-next:before {
+            content: '' !important;
+        }
+        .slick-prev,
+        .slick-next {
+            background-size: cover !important;
+            background-repeat: no-repeat !important;
+            background-position: center !important;
+            height: 30px !important;
+            width: 30px !important;
+        }
+        .slick-prev {
+            background-image: url('./images/tablet-mode/left-arrow.png') !important;
+            left: 0 !important;
+        }
+        .slick-next {
+            background-image: url('./images/tablet-mode/right-arrow.png') !important;
+            right: 0 !important;
+        }
+        .general-footer nav {
+            display: block;
+        }
     }
-    .main-menu .logo {
-        width: 155px;
+    
+    @media only screen and (min-width: 320px) and (max-width: 1199px) {
+        .row {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .cookies-wrapper {
+            margin-bottom: 0;
+        }
+        .cookies {
+            width: 100%;
+            border-radius: 0;
+            margin: 0;
+        }
+        .left-side,
+        .right-side {
+            align-items: center !important;
+        }
+        .left-side span,
+        .left-side a {
+            display: flex;
+            align-items: center;
+            font-size: 1.8vw;
+        }
+        .right-side {
+            justify-content: center !important;
+        }
+        .right-side button {
+            font-size: 1.6vw;
+        }
+        .right-side i {
+            font-size: 25px;
+            margin-right: 0;
+        }
     }
-    .main-menu .navigation {
-        margin-right: 1rem;
-    }
-    .main-menu li {
-        font-size: 13px;
-        padding-right: 1.5rem;
-    }
-}
-
-
-/* 1024px tablet mode */
-
-@media only screen and (max-width: 1024px) {
-    .overflow {
-        opacity: 0;
-        width: 0;
-        transition: opacity .2s linear;
-    }
-    .changeHamburgerMenu .overflow {
-        width: 100vw;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: 0;
-        z-index: 10;
-        background-color: gray;
-        opacity: .5;
-    }
-    header {
-        padding: 25px 0;
-    }
-    .hamburger-menu {
-        position: relative;
-        height: 30px;
-        width: 30px;
-        z-index: 20;
-    }
-    .fa.fa-bars {
-        opacity: 1;
-        color: white;
-        font-size: 30px;
-    }
-    .fa-times {
-        opacity: 0;
-    }
-    .changeHamburgerMenu .fa-bars,
-    .changeHamburgerMenu .fa-times {
-        color: white;
-        font-size: 30px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 20;
-    }
-    .changeHamburgerMenu .fa-bars {
-        opacity: 0;
-    }
-    .changeHamburgerMenu .fa-times {
-        opacity: 1;
-    }
-    .changeNavBar {
-        opacity: 1;
-        z-index: 20;
-        border-radius: 20px 0 0 20px;
-        top: 60px;
-        height: 270px;
-        padding: 10px 30px;
-    }
-    .changeNavBar ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    .happy-hour {
-        background-image: url('./images/tablet-mode/bck.jpg');
-        background-size: cover;
-        height: 82vw;
-    }
-    .happy-hour img {
-        display: none;
-    }
-    .happy-hour button {
-        position: absolute;
-        top: 70%;
-    }
-    .navigation {
-        display: none;
-    }
-    .slider-container {
-        padding: 0 45px;
-    }
-    .slider-container .box {
-        width: 100px;
-    }
-    .slick-prev:before,
-    .slick-next:before {
-        content: '' !important;
-    }
-    .slick-prev,
-    .slick-next {
-        background-size: cover !important;
-        background-repeat: no-repeat !important;
-        background-position: center !important;
-        height: 30px !important;
-        width: 30px !important;
-    }
-    .slick-prev {
-        background-image: url('./images/tablet-mode/left-arrow.png') !important;
-        left: 0 !important;
-    }
-    .slick-next {
-        background-image: url('./images/tablet-mode/right-arrow.png') !important;
-        right: 0 !important;
-    }
-    .general-footer nav {
-        display: block;
-    }
-}
-
-@media only screen and (min-width: 320px) and (max-width: 1199px) {
-    .row {
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .cookies-wrapper {
-        margin-bottom: 0;
-    }
-    .cookies {
-        width: 100%;
-        border-radius: 0;
-        margin: 0;
-    }
-    .left-side,
-    .right-side {
-        align-items: center !important;
-    }
-    .left-side span,
-    .left-side a {
-        display: flex;
-        align-items: center;
-        font-size: 1.8vw;
-    }
-    .right-side {
-        justify-content: center !important;
-    }
-    .right-side button {
-        font-size: 1.6vw;
-    }
-    .right-side i {
-        font-size: 25px;
-        margin-right: 0;
-    }
-}
-
-
-/* @media only screen and (min-width: 576px) and (max-width: 959px) {
+    /* @media only screen and (min-width: 576px) and (max-width: 959px) {
     .row {
         margin-left: 0;
         margin-right: 0;
@@ -195,54 +195,52 @@
         margin-right: 0;
     }
 } */
-
-@media only screen and (max-width: 768px) {
-    .main-menu .logo {
-        width: 22vw;
+    
+    @media only screen and (max-width: 768px) {
+        .main-menu .logo {
+            width: 22vw;
+        }
+        .changeNavBar {
+            top: 57px;
+        }
+        .happy-hour {
+            background-image: url('./images/phone-mode/bck.jpg');
+            background-size: cover;
+            height: 60vw;
+        }
+        .happy-hour button {
+            width: 21vw;
+            height: 5vh;
+            padding: 0;
+            top: 74%;
+            font-size: 1.3rem;
+        }
+        .information .fruits {
+            width: 70vw;
+        }
+        .register .container {
+            margin-bottom: 50px;
+        }
+        .content-circle {
+            margin-bottom: 2rem;
+        }
+        .payments-container {
+            width: 80%;
+        }
+        .general-footer li {
+            margin-bottom: .5rem;
+        }
+        .slider-container {
+            padding: 0;
+        }
+        .slick-prev {
+            left: -20px !important;
+        }
+        .slick-next {
+            right: -20px !important;
+        }
     }
-    .changeNavBar {
-        top: 57px;
-    }
-    .happy-hour {
-        background-image: url('./images/phone-mode/bck.jpg');
-        background-size: cover;
-        height: 60vw;
-    }
-    .happy-hour button {
-        width: 21vw;
-        height: 5vh;
-        padding: 0;
-        top: 74%;
-        font-size: 1.3rem;
-    }
-    .information .fruits {
-        width: 70vw;
-    }
-    .register .container {
-        margin-bottom: 50px;
-    }
-    .content-circle {
-        margin-bottom: 2rem;
-    }
-    .payments-container {
-        width: 80%;
-    }
-    .general-footer li {
-        margin-bottom: .5rem;
-    }
-    .slider-container {
-        padding: 0;
-    }
-    .slick-prev {
-        left: -20px !important;
-    }
-    .slick-next {
-        right: -20px !important;
-    }
-}
-
-
-/* @media only screen and (max-width: 600px) {
+    /* @media only screen and (max-width: 600px) {
     .slick-prev {
         display: none !important;
     }
@@ -250,37 +248,65 @@
         display: none !important;
     }
 } */
-
-@media only screen and (max-width: 600px) {
-    header {
-        background-color: #070a2d;
-        padding: 10px 0 0;
+    
+    @media only screen and (max-width: 600px) {
+        header {
+            background-color: #070a2d;
+            padding: 10px 0 0;
+        }
+        .showOverlay .form-container {
+            max-height: 470px;
+        }
+        .form-container header {
+            background-color: white;
+            width: 85%;
+        }
+        .changeNavBar {
+            top: 40px;
+        }
+        .main-menu .logo {
+            width: 150px;
+        }
+        .happy-hour {
+            height: 300px;
+            top: 0;
+            margin-bottom: 0;
+            background-position: center;
+        }
+        .happy-hour button {
+            padding: 3px 45px;
+            font-size: 1.3rem;
+            width: auto;
+            height: auto;
+        }
+        .register .title-text {
+            font-size: 31.5px;
+        }
+        .slick-prev {
+            display: none !important;
+        }
+        .slick-next {
+            display: none !important;
+        }
+        .form-container h1 {
+            background-color: white;
+            text-align: center;
+        }
+        .form-container .fa-times {
+            top: 6px;
+            right: 30px;
+        }
+        .register-form .container {
+            margin-top: 23px;
+        }
+        .showOverlay .row {
+            width: 100%;
+        }
     }
-    .changeNavBar {
-        top: 40px;
+    
+    @media only screen and (max-width: 540px) {
+        .form-container .fa-times {
+            top: -25px;
+            right: 3px;
+        }
     }
-    .main-menu .logo {
-        width: 150px;
-    }
-    .happy-hour {
-        height: 300px;
-        top: 0;
-        margin-bottom: 0;
-        background-position: center;
-    }
-    .happy-hour button {
-        padding: 3px 45px;
-        font-size: 1.3rem;
-        width: auto;
-        height: auto;
-    }
-    .register .title-text {
-        font-size: 31.5px;
-    }
-    .slick-prev {
-        display: none !important;
-    }
-    .slick-next {
-        display: none !important;
-    }
-}
