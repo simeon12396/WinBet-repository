@@ -297,6 +297,11 @@ header {
     cursor: pointer;
 }
 
+.multiple-selects {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
 .multiple-selects select {
     outline: none;
     border: 1px solid silver;
