@@ -82,9 +82,11 @@ cookies('isAccepted');
 
 function registerForm() {
     const registerBtn = document.querySelector('.register-btn');
+    const secondRegisterBtn = document.querySelector('.register-container button')
     const mobileRegisterBtn = document.querySelector('.mobile-register-btn');
 
     registerBtn.addEventListener('click', openModalForRegister);
+    secondRegisterBtn.addEventListener('click', openModalForRegister);
     mobileRegisterBtn.addEventListener('click', openModalForRegister);
 
     function openModalForRegister() {
@@ -190,9 +192,9 @@ function submitRegisterForm() {
             (inputName.length >= 4) &&
             (inputPassword === inputConfirmPassword)
         ) {
-            alert('Congrats!')
+            alert('Congrats!');
         } else {
-            alert('Correctly fill the form')
+            alert('Correctly fill the form');
         }
     };
 };
